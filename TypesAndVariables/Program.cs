@@ -21,6 +21,9 @@ char character = 'A';
 
 //Double
 double number5 = 10.4;
+
+//Decimal
+decimal number6 = 10.4m;
 Console.WriteLine("Number1 is :{0}", number1);
 Console.WriteLine("Number2 is :{0}", number2);
 Console.WriteLine("Number3 is :{0}", number3);
