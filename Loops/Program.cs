@@ -5,13 +5,47 @@
         // ForLoop();
         //WhileLoop();
         // DoWhileLoop();
+        // ForEachLoop();
+        if (IsPrimeNumber(6))
+        {
+            Console.WriteLine("This is a prime number");
+        }
+        else
+        {
+            Console.WriteLine("This is not a prime number");
+        }
+    }
+
+    private static bool IsPrimeNumber(int number)
+    {
+        bool result = true;
+        for (int i = 2; i < number-1; i++)
+        {
+            if (number % i == 0)
+            {
+                result = false;
+                i = number;
+            }
+                
+        }
+        return result;  
+
+
+    }
+    
+    
+    
+    
+    
+    // For Each Loop
+    private static void ForEachLoop()
+    {
         string[] students2 = { "Engin", "Derin", "Salih" };
         foreach (var student in students2)
         {
             Console.WriteLine(student);
         }
     }
-    
 
 
     // Do While Döngüsü
