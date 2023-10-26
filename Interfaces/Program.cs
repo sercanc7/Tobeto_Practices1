@@ -4,29 +4,37 @@
     {
         static void Main(string[] args)
         {
-            PersonManager manager = new PersonManager();
-            Customer customer = new Customer
-            {
-                Id = 1,
-                FirstName = "Engin",
-                LastName = "Demirog",
-                Address = "Ankara"
-            };
-
-
-            Student student = new Student
-            {
-                Id = 1,
-                FirstName = "Derin",
-                LastName = "Demirog",
-                Departmant = "Computer Sciences"
-            };
-
-            manager.Add(student);
-            manager.Add(customer);
+            //Interfacesintro();
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());            
 
 
         }
+        //private static void Interfacesintro()
+        //{
+        //    PersonManager manager = new PersonManager();
+        //    Customer customer = new Customer
+        //    {
+        //        Id = 1,
+        //        FirstName = "Engin",
+        //        LastName = "Demirog",
+        //        Address = "Ankara"
+        //    };
+
+
+        //    Student student = new Student
+        //    {
+        //        Id = 1,
+        //        FirstName = "Derin",
+        //        LastName = "Demirog",
+        //        Departmant = "Computer Sciences"
+        //    };
+
+        //    manager.Add(student);
+        //    manager.Add(customer);
+
+
+        //}
 
 
 
