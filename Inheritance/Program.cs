@@ -18,7 +18,7 @@ namespace Inheritance
             }
         }
     }
-
+     // Inheritance veya interface arasında interface tercih edilmeli.
 
     class Person
     {
